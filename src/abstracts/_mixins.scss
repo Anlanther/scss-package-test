@@ -1,0 +1,19 @@
+@use "variables" as vars;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin spacing($size: "medium") {
+  $space: vars.$spacing-medium;
+
+  @if $size == "small" {
+    $space: vars.$spacing-small;
+  } @else if $size == "large" {
+    $space: vars.$spacing-large;
+  }
+
+  padding: $space;
+}

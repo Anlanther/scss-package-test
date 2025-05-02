@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+
+.btn {
+  @include mix.flex-center;
+  @include mix.spacing("medium");
+
+  background-color: vars.$primary-color;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &--secondary {
+    background-color: vars.$secondary-color;
+  }
+}

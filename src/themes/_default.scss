@@ -1,0 +1,18 @@
+// Define default theme configuration
+$primary-color: #0052cc !default;
+$secondary-color: #505f79 !default;
+$spacing-unit: 4px !default;
+
+// Forward these values so they're available to the rest of the system
+@forward "../abstracts/variables" show 
+  $primary-color,
+  $secondary-color,
+  $spacing-unit,
+  $spacing-small,
+  $spacing-medium,
+  $spacing-large
+with (
+  $primary-color: $primary-color,
+  $secondary-color: $secondary-color,
+  $spacing-unit: $spacing-unit
+);

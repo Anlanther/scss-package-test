@@ -1,0 +1,32 @@
+{
+  "name": "@anlanther/core-styles",
+  "version": "1.0.7",
+  "description": "Core SCSS styles library",
+  "main": "dist/index.css",
+  "style": "dist/index.css",
+  "sass": "_index.scss",
+  "files": [
+    "dist",
+    "src",
+    "./_index.scss"
+  ],
+  "scripts": {
+    "build": "sass _index.scss dist/index.css --style compressed",
+    "watch": "sass _index.scss dist/index.css --watch",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "scss",
+    "sass",
+    "styles",
+    "css"
+  ],
+  "author": "",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "sass": "^1.x.x"
+  }
+}
